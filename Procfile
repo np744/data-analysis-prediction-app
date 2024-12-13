@@ -1,1 +1,1 @@
-web: gunicorn milestone4:app.server
+web:gunicorn milestone4:app.server
