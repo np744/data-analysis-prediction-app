@@ -11,6 +11,7 @@ import dash
 import pandas as pd
 import io
 import base64
+import os
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
 
@@ -285,6 +286,6 @@ def make_prediction(n_clicks, input_values, target_var):
 
     return "Please enter values to make a prediction."
 
-#Test
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    port = int(os.environ.get("PORT", 8050))
+    app.run_server(debug=False, host="0.0.0.0", port=port)
