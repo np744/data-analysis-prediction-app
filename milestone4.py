@@ -1,8 +1,7 @@
 from dash import dcc, html, Input, Output, State, callback
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.model_selection import train_test_splitls
-
+from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
