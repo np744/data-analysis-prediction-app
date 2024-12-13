@@ -285,5 +285,6 @@ def make_prediction(n_clicks, input_values, target_var):
 
     return "Please enter values to make a prediction."
 
+#Test
 if __name__ == '__main__':
     app.run_server(debug=False)
