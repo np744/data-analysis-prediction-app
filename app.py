@@ -286,6 +286,6 @@ def make_prediction(n_clicks, input_values, target_var):
 
     return "Please enter values to make a prediction."
 
-if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 8050))
-    app.run_server(debug=False, host="0.0.0.0", port=port)
+server = app.server
+if __name__ == 'main':
+    app.run_server(debug=True, port=8051)
